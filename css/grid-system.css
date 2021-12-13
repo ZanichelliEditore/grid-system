@@ -1,0 +1,416 @@
+.container {
+  padding-left: var(--grid-mobile-gutter);
+  padding-right: var(--grid-mobile-gutter);
+}
+
+.grid {
+  --columns: var(--grid-mobile-column);
+  --column-gap: var(--grid-mobile-gutter);
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  width: 100%;
+  column-gap: var(--column-gap);
+}
+
+.col-span-full {
+  grid-column: 1 / -1;
+}
+
+.col-sm-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-sm-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-sm-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-sm-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-start-4,
+.col-start-5,
+.col-start-6,
+.col-start-7,
+.col-start-8,
+.col-start-9,
+.col-start-10,
+.col-start-11,
+.col-start-12 {
+  grid-column-start: 4;
+}
+
+/*
+    .col-start-rev-1 is intentionally missing
+    because `grid-column-start: -1` will place the item after the last column,
+    breaking the grid
+  */
+
+.col-start-rev-2 {
+  grid-column-start: -2;
+}
+
+.col-start-rev-3 {
+  grid-column-start: -3;
+}
+
+.col-start-rev-4 {
+  grid-column-start: -4;
+}
+
+.col-start-rev-5,
+.col-start-rev-6,
+.col-start-rev-7,
+.col-start-rev-8,
+.col-start-rev-9,
+.col-start-rev-10,
+.col-start-rev-11,
+.col-start-rev-12,
+.col-start-rev-13 {
+  grid-column-start: -5;
+}
+
+.col-end-last {
+  grid-column-end: -1;
+}
+
+/*
+    .col-end-1 is intentionally missing:
+    since `grid-column-end: <n>` means "end this column where column <n> start"
+    and not "end this column where column <n> end",
+    `grid-column-end: 1` means "end this column where column 1 start"
+    that will break things up and doesn't even make any sense IMHO.
+  */
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+/*
+    NB: this means "end this column where column 5 start",
+    which is the same as saying "end this column where column 4 end"
+  */
+.col-end-5,
+.col-end-6,
+.col-end-7,
+.col-end-8,
+.col-end-9,
+.col-end-10,
+.col-end-11,
+.col-end-12,
+.col-end-13 {
+  grid-column-end: 5;
+}
+
+.col-end-rev-1 {
+  grid-column-end: -1;
+}
+
+.col-end-rev-2 {
+  grid-column-end: -2;
+}
+
+.col-end-rev-3 {
+  grid-column-end: -3;
+}
+
+.col-end-rev-4,
+.col-end-rev-5,
+.col-end-rev-6,
+.col-end-rev-7,
+.col-end-rev-8,
+.col-end-rev-9,
+.col-end-rev-10,
+.col-end-rev-11,
+.col-end-rev-12 {
+  grid-column-end: -4;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--grid-tablet-gutter);
+    padding-right: var(--grid-tablet-gutter);
+  }
+
+  .grid {
+    --columns: var(--grid-tablet-column);
+    --column-gap: var(--grid-tablet-gutter);
+  }
+
+  .col-md-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .col-md-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .col-md-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .col-md-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .col-md-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .col-md-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .col-md-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .col-md-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .col-start-5 {
+    grid-column-start: 5;
+  }
+
+  .col-start-6 {
+    grid-column-start: 6;
+  }
+
+  .col-start-7 {
+    grid-column-start: 7;
+  }
+
+  .col-start-8,
+  .col-start-9,
+  .col-start-10,
+  .col-start-11,
+  .col-start-12 {
+    grid-column-start: 8;
+  }
+
+  .col-start-rev-6 {
+    grid-column-start: -6;
+  }
+
+  .col-start-rev-7 {
+    grid-column-start: -7;
+  }
+
+  .col-start-rev-8 {
+    grid-column-start: -8;
+  }
+
+  .col-start-rev-9,
+  .col-start-rev-10,
+  .col-start-rev-11,
+  .col-start-rev-12,
+  .col-start-rev-13 {
+    grid-column-start: -9;
+  }
+
+  .col-end-6 {
+    grid-column-end: 6;
+  }
+
+  .col-end-7 {
+    grid-column-end: 7;
+  }
+
+  .col-end-8 {
+    grid-column-end: 8;
+  }
+
+  .col-end-9,
+  .col-end-10,
+  .col-end-11,
+  .col-end-12,
+  .col-end-13 {
+    grid-column-end: 9;
+  }
+
+  .col-end-rev-5 {
+    grid-column-end: -5;
+  }
+
+  .col-end-rev-6 {
+    grid-column-end: -6;
+  }
+
+  .col-end-rev-7 {
+    grid-column-end: -7;
+  }
+
+  .col-end-rev-8,
+  .col-end-rev-9,
+  .col-end-rev-10,
+  .col-end-rev-11,
+  .col-end-rev-12 {
+    grid-column-end: -8;
+  }
+}
+
+@media (min-width: 1152px) {
+  .container {
+    padding-left: var(--grid-desktop-gutter);
+    padding-right: var(--grid-desktop-gutter);
+  }
+
+  .grid {
+    --columns: var(--grid-desktop-column);
+    --column-gap: var(--grid-desktop-gutter);
+  }
+
+  .col-xl-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .col-xl-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .col-xl-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .col-xl-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .col-xl-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .col-xl-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .col-xl-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .col-xl-8 {
+    grid-column: span 8 / span 8;
+  }
+
+  .col-xl-9 {
+    grid-column: span 9 / span 9;
+  }
+
+  .col-xl-10 {
+    grid-column: span 1 / span 10;
+  }
+
+  .col-xl-11 {
+    grid-column: span 1 / span 11;
+  }
+
+  .col-xl-12 {
+    grid-column: span 1 / span 12;
+  }
+
+  .col-start-9 {
+    grid-column-start: 9;
+  }
+
+  .col-start-10 {
+    grid-column-start: 10;
+  }
+
+  .col-start-11 {
+    grid-column-start: 11;
+  }
+
+  .col-start-12 {
+    grid-column-start: 12;
+  }
+
+  .col-start-rev-10 {
+    grid-column-start: -10;
+  }
+
+  .col-start-rev-11 {
+    grid-column-start: -11;
+  }
+
+  .col-start-rev-12 {
+    grid-column-start: -12;
+  }
+
+  .col-start-rev-13 {
+    grid-column-start: -13;
+  }
+
+  .col-end-10 {
+    grid-column-end: 10;
+  }
+
+  .col-end-11 {
+    grid-column-end: 11;
+  }
+
+  .col-end-12 {
+    grid-column-end: 12;
+  }
+
+  .col-end-13 {
+    grid-column-end: 13;
+  }
+
+  .col-end-rev-9 {
+    grid-column-end: -9;
+  }
+
+  .col-end-rev-10 {
+    grid-column-end: -10;
+  }
+
+  .col-end-rev-11 {
+    grid-column-end: -11;
+  }
+
+  .col-end-rev-12 {
+    grid-column-end: -12;
+  }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    padding-left: var(--grid-wide-gutter);
+    padding-right: var(--grid-wide-gutter);
+  }
+
+  .grid {
+    --columns: var(--grid-wide-column);
+    --column-gap: var(--grid-wide-gutter);
+  }
+
+  .col-span-large-4 {
+    grid-column: span 4;
+  }
+}
