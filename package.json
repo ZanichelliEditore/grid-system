@@ -1,6 +1,6 @@
 {
   "name": "@zanichelli/grid-system",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Zanichelli Grid System",
   "main": "css/grid-system.css",
   "directories": {
