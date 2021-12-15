@@ -8,5 +8,15 @@
   },
   "author": "Zanichelli",
   "license": "MIT",
-  "homepage": "https://github.com/ZanichelliEditore/grid-system"
+  "homepage": "https://github.com/ZanichelliEditore/grid-system",
+  "scripts": {
+    "test": "echo \"Warning: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZanichelliEditore/grid-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZanichelliEditore/grid-system/issues"
+  }
 }
