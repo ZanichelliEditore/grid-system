@@ -1,4 +1,4 @@
-.container {
+.grid-container {
   padding-left: var(--grid-mobile-gutter);
   padding-right: var(--grid-mobile-gutter);
 }
@@ -152,7 +152,7 @@
 }
 
 @media (min-width: 768px) {
-  .container {
+  .grid-container {
     padding-left: var(--grid-tablet-gutter);
     padding-right: var(--grid-tablet-gutter);
   }
@@ -276,7 +276,7 @@
 }
 
 @media (min-width: 1152px) {
-  .container {
+  .grid-container {
     padding-left: var(--grid-desktop-gutter);
     padding-right: var(--grid-desktop-gutter);
   }
@@ -400,7 +400,7 @@
 }
 
 @media (min-width: 1366px) {
-  .container {
+  .grid-container {
     padding-left: var(--grid-wide-gutter);
     padding-right: var(--grid-wide-gutter);
   }
