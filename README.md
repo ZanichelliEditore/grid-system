@@ -10,28 +10,30 @@
 
 Simple usage can be:
 
+    ```html
     <div class="container">
-        <div class="grid">
-            <div class="col-span-4">col-span-4</div>
-            <div class="col-span-4">col-span-4</div>
-            <div class="col-span-4">col-span-4</div>
-        </div>
-        <div class="grid">
-            <div class="col-span-6">col-span-6</div>
-            <div class="col-span-6">col-span-6</div>
-        </div>
+      <h3>Mixed</h3>
+      <div class="grid">
+        <div class="col-xl-6 col-md-4">col-xl-6 col-md-4</div>
+        <div class="col-xl-6 col-md-4">col-xl-6 col-md-4</div>
+      </div>
+      <div class="grid">
+        <div class="col-sm-4 col-xl-5">col-sm-4 col-xl-5</div>
+        <div class="col-sm-4 col-xl-5">col-sm-4 col-xl-5</div>
+      </div>
+      <div class="grid">
+        <div class="col-md-2 col-xl-6">col-xl-6 col-md-2</div>
+        <div class="col-md-2 col-xl-6">col-xl-6 col-md-2</div>
+        <div class="col-xl-6 col-md-4 col-xl-2">col-xl-6 col-md-4 col-xl-2</div>
+      </div>
     </div>
 
 For other example see example folder
 
 To use the library add to your package json in dependecies section as:
 
-    "dependencies": {
-        "@zanichelli/gridsystem": "^0.0.3",
-    }
+    yarn add @zanichelli/albe-grid-system
 
 Import it in your stylesheet with:
 
-    @import '~@zanichelli/gridsystem/css/grid-system.css';
-
-Install with `yarn install` as usual
+    @import '~@zanichelli/albe-grid-system/css/grid-system.css';
