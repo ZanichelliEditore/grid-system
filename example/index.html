@@ -8,7 +8,7 @@
       href="https://unpkg.com/@zanichelli/albe-design-tokens/dist/tokens.css"
     />
     <link rel="stylesheet" media="screen" href="../css/grid-system.css" />
-    <link rel="icon" type="image/x-icon" href="../asssets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <style>
       * {
         font-family: var(--font-family-sans);
@@ -36,7 +36,6 @@
         background-color: var(--accent-lighter);
         text-align: center;
         font-size: 14px;
-        margin: 4px 0;
         overflow-x: auto;
       }
       @media (min-width: 768px) {
@@ -61,21 +60,7 @@
   <body>
     <h1>Zanichelli Grid System</h1>
     <div class="container desktop">
-      <h3>Desktop</h3>
-      <div class="grid">
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-        <div class="col-xl-1">col-xl-1</div>
-      </div>
+      <h3>Large Desktop</h3>
       <div class="grid">
         <div class="col-xl-3">col-xl-3</div>
         <div class="col-xl-3">col-xl-3</div>
@@ -93,18 +78,28 @@
       </div>
     </div>
 
+    <div class="container desktop">
+      <h3>Small Desktop</h3>
+        <div class="grid">
+          <div class="col-lg-3">col-lg-3</div>
+          <div class="col-lg-3">col-lg-3</div>
+          <div class="col-lg-3">col-lg-3</div>
+          <div class="col-lg-3">col-lg-3</div>
+        </div>
+        <div class="grid">
+          <div class="col-lg-4">col-lg-4</div>
+          <div class="col-lg-4">col-lg-4</div>
+          <div class="col-lg-4">col-lg-4</div>
+        </div>
+        <div class="grid">
+          <div class="col-lg-6">col-lg-6</div>
+          <div class="col-lg-6">col-lg-6</div>
+        </div>
+      </div>
+    </div>
+
     <div class="container tablet">
       <h3>Tablet</h3>
-      <div class="grid">
-        <div class="col-md-1">col-md-1</div>
-        <div class="col-md-1">col-md-1</div>
-        <div class="col-md-1">col-md-1</div>
-        <div class="col-md-1">col-md-1</div>
-        <div class="col-md-1">col-md-1</div>
-        <div class="col-md-1">col-md-1</div>
-        <div class="col-md-1">col-md-1</div>
-        <div class="col-md-1">col-md-1</div>
-      </div>
       <div class="grid">
         <div class="col-md-3">col-md-3</div>
         <div class="col-md-3">col-md-3</div>
@@ -123,39 +118,31 @@
     <div class="container">
       <h3>Mixed</h3>
       <div class="grid">
-        <div class="col-xl-6 col-md-4">col-xl-6 col-md-4</div>
-        <div class="col-xl-6 col-md-4">col-xl-6 col-md-4</div>
+        <div class="col-4 col-md-4 col-lg-6">col-6 col-md-4 col-lg-6</div>
+        <div class="col-4 col-md-4 col-lg-6">col-6 col-md-4 col-lg-6</div>
       </div>
       <div class="grid">
-        <div class="col-sm-4 col-xl-5">col-sm-4 col-xl-5</div>
-        <div class="col-sm-4 col-xl-5">col-sm-4 col-xl-5</div>
+        <div class="col-4 col-xl-6">col-4 col-xl-6</div>
+        <div class="col-4 col-xl-6">col-4 col-xl-6</div>
       </div>
       <div class="grid">
-        <div class="col-md-2 col-xl-6">col-xl-6 col-md-2</div>
-        <div class="col-md-2 col-xl-6">col-xl-6 col-md-2</div>
-        <div class="col-xl-6 col-md-4 col-xl-2">col-xl-6 col-md-4 col-xl-2</div>
+        <div class="col-2 col-xl-6">col-2 col-xl-6</div>
+        <div class="col-2 col-xl-6">col-2 col-xl-6</div>
+        <div class="col-4 col-lg-6 col-start-1 col-lg-start-4">col-4 col-lg-6 col-start-1 col-lg-start-4</div>
       </div>
     </div>
 
     <div class="container">
       <h3>Nested</h3>
       <div class="grid">
-        <div class="col-sm-2 col-xl-3">col-sm-2 col-xl-3</div>
-        <div class="col-sm-4 col-md-6 col-xl-9">
-          <span>col-sm-4 col-md-6 col-xl-9</span>
+        <div class="col-4 col-md-2 col-lg-3">col-4 col-md-2 col-lg-3</div>
+        <div class="col-4 col-md-6 col-lg-9">
+          <span>col-4 col-md-6 col-lg-9</span>
           <div class="grid">
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
-            <div class="col-xl-1">col-xl-1</div>
+            <div class="col-1 col-md-2 col-lg-3">col-1 col-md-2 col-lg-3</div>
+            <div class="col-1 col-md-2 col-lg-3">col-1 col-md-2 col-lg-3</div>
+            <div class="col-1 col-md-2 col-lg-3">col-1 col-md-2 col-lg-3</div>
+            <div class="col-1 col-md-2 col-lg-3">col-1 col-md-2 col-lg-3</div>
           </div>
         </div>
       </div>
